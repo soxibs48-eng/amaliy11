@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="lb1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAE5DC"/>
+      <stop offset="50%" stop-color="#DFD8CC"/>
+      <stop offset="100%" stop-color="#D0C6B5"/>
+    </linearGradient>
+    <linearGradient id="silkFlow" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#FBF8F2"/>
+      <stop offset="70%" stop-color="#ECE5D6"/>
+      <stop offset="100%" stop-color="#D5C9B3"/>
+    </linearGradient>
+    <filter id="lbShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#2E261E" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#lb1Bg)"/>
+
+  <!-- Morning Window Shadow Casting angled lines -->
+  <g fill="#D3C9B8" opacity="0.4">
+    <polygon points="0,0 200,0 120,600 0,600"/>
+    <polygon points="300,0 480,0 380,600 240,600"/>
+    <polygon points="580,0 750,0 640,600 500,600"/>
+  </g>
+
+  <!-- Luxurious Draped Silk Bed Landscape -->
+  <path d="M0 240
+           C180 200 320 280 500 230
+           C650 190 720 220 800 210
+           L800 600 L0 600 Z"
+        fill="url(#silkFlow)"/>
+
+  <!-- Deep Silk Folds & Light Crests -->
+  <path d="M40 270C220 240 380 320 560 260C680 230 760 270 800 240" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  <path d="M-10 350C160 310 340 390 520 330C660 290 740 350 810 320" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+  <path d="M60 440C240 400 420 470 610 410C710 380 770 420 810 400" stroke="#E0D4BE" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Breakfast in Bed / Morning Ritual Brass Tray -->
+  <g transform="translate(420, 260)" filter="url(#lbShadow)">
+    <ellipse cx="140" cy="90" rx="130" ry="70" fill="#C5A880" stroke="#DFCCA8" stroke-width="3"/>
+    <ellipse cx="140" cy="90" rx="122" ry="64" fill="#E8DEC8"/>
+
+    <!-- Porcelain Espresso Cup & Saucer -->
+    <ellipse cx="110" cy="95" rx="35" ry="18" fill="#FFFDF8" stroke="#D7CEBF" stroke-width="1.5"/>
+    <ellipse cx="110" cy="85" rx="22" ry="14" fill="#FFFDF8" stroke="#D7CEBF" stroke-width="1.5"/>
+    <ellipse cx="110" cy="83" rx="18" ry="10" fill="#422919"/>
+    <!-- Latte Crema Swirl -->
+    <path d="M106 82C112 80 114 85 110 85" stroke="#C5A880" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Croissant & Glass of Water -->
+    <path d="M165 75C175 60 205 65 210 80C215 90 200 95 190 92C180 90 160 85 165 75Z" fill="#C68945" stroke="#A86E30" stroke-width="1"/>
+    <!-- Fresh Gardenia Blossom -->
+    <circle cx="80" cy="110" r="10" fill="#FFFFFF"/>
+    <circle cx="76" cy="108" r="8" fill="#FFFDF5"/>
+    <circle cx="80" cy="110" r="3" fill="#E2C17C"/>
+  </g>
+
+  <!-- Editorial Text Overlay -->
+  <text x="50" y="520" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-style="italic" font-weight="600" fill="#181816">Morning at the Atelier</text>
+  <text x="52" y="545" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="2" font-weight="600" fill="#756754">MOLLEN LUXURY BEDDING &bull; EDITION 2026</text>
+</svg>

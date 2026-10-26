@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F6F2"/>
+      <stop offset="100%" stop-color="#EBE7DE"/>
+    </linearGradient>
+    <linearGradient id="satinDark" x1="0%" y1="0%" x2="100%" y2="90%">
+      <stop offset="0%" stop-color="#3A3A36"/>
+      <stop offset="45%" stop-color="#252522"/>
+      <stop offset="80%" stop-color="#1A1A18"/>
+      <stop offset="100%" stop-color="#11110F"/>
+    </linearGradient>
+    <filter id="pShadow2" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#181816" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgGrad2)"/>
+  <ellipse cx="300" cy="460" rx="230" ry="45" fill="#DDD7CB" opacity="0.6"/>
+
+  <g transform="translate(100, 110)" filter="url(#pShadow2)">
+    <!-- Base folded duvet -->
+    <rect x="20" y="190" width="360" height="150" rx="16" fill="url(#satinDark)"/>
+    <path d="M20 230C110 215 220 240 380 225" stroke="#5E5E58" stroke-width="4" opacity="0.6"/>
+    <path d="M25 240C120 228 230 250 375 235" stroke="#FFFFFF" stroke-width="1.5" opacity="0.3"/>
+    <path d="M30 290C130 275 250 300 370 285" stroke="#333330" stroke-width="3" opacity="0.8"/>
+
+    <!-- Middle layer sheet -->
+    <rect x="40" y="130" width="320" height="100" rx="14" fill="#2E2E2A" stroke="#45453E" stroke-width="1.2"/>
+    <path d="M45 165C130 152 240 174 355 162" stroke="#686860" stroke-width="3" opacity="0.6"/>
+
+    <!-- Pillow Top -->
+    <g transform="translate(60, 40)">
+      <rect x="0" y="0" width="280" height="130" rx="14" fill="url(#satinDark)" stroke="#4A4A42" stroke-width="1.5"/>
+      <rect x="14" y="14" width="252" height="102" rx="8" stroke="#C5A880" stroke-width="1.4"/>
+      <path d="M30 45C100 25 180 50 250 35" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+      <path d="M35 50C105 32 185 55 245 42" stroke="#888880" stroke-width="1" opacity="0.5"/>
+    </g>
+
+    <!-- Bronze/Gold Contrast Band -->
+    <path d="M190 40V340" stroke="#C5A880" stroke-width="16"/>
+    <path d="M190 40V340" stroke="#DFCCA8" stroke-width="3"/>
+    <circle cx="190" cy="180" r="22" fill="#242420" stroke="#C5A880" stroke-width="2"/>
+    <text x="190" y="185" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" font-weight="700" fill="#DFCCA8" text-anchor="middle">M</text>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(40, 40)">
+    <rect width="145" height="30" rx="15" fill="#C5A880"/>
+    <text x="72" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" letter-spacing="1.5" fill="#181816" text-anchor="middle">MAKO-SATIN 600 TC</text>
+  </g>
+</svg>

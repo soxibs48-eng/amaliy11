@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOLLEN | Постельное белье и текстиль из натурального шелка и мако-сатина</title>
+  <meta name="description" content="Официальный сайт Mollen Haute Literie. Премиальное постельное белье из 100% натурального шелка Mulberry 22 Momme и египетского мако-сатина 600 TC. Капсульные коллекции, шелковые кимоно и ароматы для дома.">
+  <meta name="keywords" content="Mollen, шелковое постельное белье, натуральный шелк Mulberry, мако-сатин, шелковая наволочка, шелковое кимоно, элитный текстиль для дома">
+  <meta property="og:title" content="MOLLEN — Haute Literie & Luxury Silk Bedding">
+  <meta property="og:description" content="Прикосновение истинного шелка. Эксклюзивный текстиль для дома от ателье Mollen.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-cover.svg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="container announcement-content">
+      <div class="announcement-left">
+        <span class="pulse-dot"></span>
+        <span>Москва, Кутузовский пр-т, 12 &bull; Флагманский шоурум</span>
+      </div>
+      <div class="announcement-center">
+        <span class="announcement-highlight">Бесплатная доставка с примеркой по всей России при заказе от 15 000 ₽</span>
+      </div>
+      <div class="announcement-right">
+        <!-- Currency Selector -->
+        <div class="currency-selector" id="currencySelector">
+          <button class="currency-btn active" data-currency="RUB" id="btnCurRub">₽ RUB</button>
+          <button class="currency-btn" data-currency="USD" id="btnCurUsd">$ USD</button>
+          <button class="currency-btn" data-currency="EUR" id="btnCurEur">€ EUR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Luxury Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      
+      <!-- Mobile Menu Trigger -->
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Открыть мобильное меню">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Primary Brand Logo -->
+      <a href="#hero" class="brand-logo" id="mainBrandLogo" aria-label="MOLLEN Главная">
+        <img src="assets/images/logo.svg" alt="MOLLEN Haute Literie" class="logo-img" width="220" height="48">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#collections" class="nav-link" id="navLinkCollections">Коллекции</a>
+          </li>
+          <li class="nav-item">
+            <a href="#materials" class="nav-link" id="navLinkMaterials">Шелк Mulberry</a>
+          </li>
+          <li class="nav-item">
+            <a href="#capsule" class="nav-link" id="navLinkCapsule">Сказки Пушкина</a>
+          </li>
+          <li class="nav-item">
+            <a href="#lookbook" class="nav-link" id="navLinkLookbook">Лукбук</a>
+          </li>
+          <li class="nav-item">
+            <a href="#atelier" class="nav-link" id="navLinkAtelier">Ателье</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reviews" class="nav-link" id="navLinkReviews">Пресса и Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Utilities -->
+      <div class="header-actions">
+        <!-- Search Trigger -->
+        <button class="action-btn" id="searchTriggerBtn" aria-label="Поиск по сайту">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button class="action-btn" id="wishlistBtn" aria-label="Избранное">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlistCount">0</span>
+        </button>
+
+        <!-- Cart Drawer Trigger -->
+        <button class="action-btn cart-btn" id="cartTriggerBtn" aria-label="Открыть корзину">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="badge-count" id="cartBadgeCount">0</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Collapsible Search Bar Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="container search-inner">
+        <div class="search-input-wrap">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="siteSearchInput" placeholder="Поиск по шелку, мако-сатину, кимоно или коллекции..." autocomplete="off">
+          <button class="search-close-btn" id="searchCloseBtn" aria-label="Закрыть поиск">&times;</button>
+        </div>
+        <div class="search-quick-tags">
+          <span class="tag-label">Популярные запросы:</span>
+          <button class="quick-tag" data-query="Шелк Mulberry">Шелк Mulberry 22 Momme</button>
+          <button class="quick-tag" data-query="Мако-Сатин">Мако-Сатин 600 TC</button>
+          <button class="quick-tag" data-query="Сказка">Сказки Пушкина</button>
+          <button class="quick-tag" data-query="Кимоно">Шелковое кимоно</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="assets/images/logo.svg" alt="MOLLEN" width="160">
+      <button class="drawer-close" id="mobileDrawerClose" aria-label="Закрыть меню">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <ul class="drawer-nav">
+        <li><a href="#collections" class="drawer-link">Коллекции текстиля</a></li>
+        <li><a href="#materials" class="drawer-link">Шелк сорта Mulberry</a></li>
+        <li><a href="#capsule" class="drawer-link">Сказки Пушкина</a></li>
+        <li><a href="#lookbook" class="drawer-link">Лукбук интерьеров</a></li>
+        <li><a href="#atelier" class="drawer-link">Индивидуальный пошив</a></li>
+        <li><a href="#reviews" class="drawer-link">Отзывы клиентов</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <p class="drawer-phone">+7 (495) 820-22-10</p>
+        <p class="drawer-note">Ежедневно с 10:00 до 22:00 МСК</p>
+        <button class="btn btn-primary btn-full" id="drawerConciergeBtn">Заказать примерку в спальню</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop">
+        <img src="assets/images/hero-cover.svg" alt="Mollen Haute Literie Bedroom Interior" class="hero-cover-img" id="heroCoverImg">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text-block">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow-text">MOLLEN HAUTE LITERIE &bull; COLLECTION 2026</span>
+          </div>
+
+          <h1 class="hero-title">
+            Прикосновение <br>
+            <span class="serif-italic">истинного шелка</span> <br>
+            к вашему сну
+          </h1>
+
+          <p class="hero-subtitle">
+            Капсульные коллекции постельного белья из органического шелка Mulberry 22 Momme 
+            и длинноволокнистого египетского мако-сатина 600 TC. Создано вручную в собственном московском ателье.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#collections" class="btn btn-primary" id="btnHeroCatalog">
+              <span>Смотреть коллекцию</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <button class="btn btn-secondary" id="btnHeroConcierge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12A10 10 0 0 1 12 2z"></path>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+              <span>Примерка в интерьере</span>
+            </button>
+          </div>
+
+          <!-- Hero Metrics & Features -->
+          <div class="hero-features-strip">
+            <div class="feature-item">
+              <span class="feature-num">100%</span>
+              <span class="feature-label">Mulberry Silk Grade 6A</span>
+            </div>
+            <div class="feature-divider"></div>
+            <div class="feature-item">
+              <span class="feature-num">600 TC</span>
+              <span class="feature-label">Египетский Мако-Сатин</span>
+            </div>
+            <div class="feature-divider"></div>
+            <div class="feature-item">
+              <span class="feature-num">OEKO</span>
+              <span class="feature-label">Standard 100 Eco-Safe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Hotspot Preview Card on Hero -->
+        <div class="hero-curated-card">
+          <div class="curated-badge">Флагманский сет</div>
+          <h3 class="curated-title">Mulberry Pearl Silk Set</h3>
+          <p class="curated-desc">22 Momme &bull; Натуральный жемчужный оттенок</p>
+          <div class="curated-price-row">
+            <span class="curated-price" data-rub="54000">54 000 ₽</span>
+            <button class="curated-quick-add" data-id="1" id="heroQuickAddBtn" title="Быстро добавить">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              <span>В корзину</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND VALUES STRIP -->
+    <section class="values-bar">
+      <div class="container values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="1.8">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <div class="value-text">
+            <h4>Шелк высшего сорта 6A</h4>
+            <p>Длинные непрерывные шелковые нити плотностью 22 Momme для максимальной гладкости и долговечности.</p>
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="value-text">
+            <h4>Anti-Age Свойства</h4>
+            <p>Аминокислоты и протеины шелка сохраняют естественную влагу кожи и защищают волосы от ломкости.</p>
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="1.8">
+              <path d="M20 7h-7L10 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"></path>
+            </svg>
+          </div>
+          <div class="value-text">
+            <h4>Пошив по меркам матраса</h4>
+            <p>Индивидуальная подгонка простыней на резинке под высоту любого матраса до 45 см.</p>
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="1.8">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="value-text">
+            <h4>Бесплатная примерка</h4>
+            <p>Курьер привезет до 3 комплектов в фирменных подарочных коробках Mollen для тактильной примерки.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOG / COLLECTIONS SECTION -->
+    <section class="section collections-section" id="collections">
+      <div class="container">
+        
+        <div class="section-header-centered">
+          <span class="sub-heading">ATELIER CATALOGUE</span>
+          <h2 class="section-title">Коллекции постельного белья</h2>
+          <p class="section-lead">
+            Откройте гармонию безупречных тканей, созданных дарить тактильное блаженство каждую ночь.
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="category-tabs" id="categoryTabs">
+          <button class="tab-btn active" data-filter="all">Все изделия</button>
+          <button class="tab-btn" data-filter="silk">Шелк Mulberry 22 Momme</button>
+          <button class="tab-btn" data-filter="satin">Мако-Сатин 600 TC</button>
+          <button class="tab-btn" data-filter="capsule">Капсулы "Сказки"</button>
+          <button class="tab-btn" data-filter="loungewear">Шелковые кимоно</button>
+          <button class="tab-btn" data-filter="accessories">Аксессуары и свечи</button>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div class="products-grid" id="productsGrid">
+
+          <!-- Product 1: Mulberry Silk Bedding Set -->
+          <article class="product-card" data-category="silk" data-id="1">
+            <div class="card-media">
+              <span class="product-tag tag-luxury">Флагман ателье</span>
+              <img src="assets/images/product-silk-set.svg" alt="Комплект постельного белья Mulberry Silk Champagne" class="product-img" loading="lazy">
+              <div class="card-overlay-actions">
+                <button class="btn-quick-view" data-id="1" aria-label="Быстрый просмотр">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  </svg>
+                  <span>Быстрый просмотр</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="card-material">100% ШЕЛК MULBERRY 22 MOMME</span>
+                <div class="card-rating">
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="reviews-count">(48)</span>
+                </div>
+              </div>
+              <h3 class="card-title">Комплект постельного белья "Champagne Pearl"</h3>
+              <p class="card-fabric-info">Шелковое полотно Grade 6A с деликатным кантом цвета шампань</p>
+              
+              <!-- Color Swatches -->
+              <div class="color-swatches">
+                <button class="swatch active" style="background-color: #FAF4EB;" title="Champagne Pearl"></button>
+                <button class="swatch" style="background-color: #E8D5CA;" title="Rose Quartz"></button>
+                <button class="swatch" style="background-color: #2F3630;" title="Forest Emerald"></button>
+                <button class="swatch" style="background-color: #222220;" title="Onyx Night"></button>
+              </div>
+
+              <div class="card-footer">
+                <div class="price-wrap">
+                  <span class="price-amount" data-rub="54000">54 000 ₽</span>
+                  <span class="price-hint">Пододеяльник + 2 наволочки + простыня</span>
+                </div>
+                <button class="btn-add-cart" data-id="1" aria-label="В корзину">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2: Mako-Satin Egyptian Cotton Set -->
+          <article class="product-card" data-category="satin" data-id="2">
+            <div class="card-media">
+              <span class="product-tag tag-bestseller">Хит продаж</span>
+              <img src="assets/images/product-satin-onyx.svg" alt="Комплект Мако-Сатин Onyx Graphite" class="product-img" loading="lazy">
+              <div class="card-overlay-actions">
+                <button class="btn-quick-view" data-id="2" aria-label="Быстрый просмотр">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  </svg>
+                  <span>Быстрый просмотр</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="card-material">МАКО-САТИН 600 TC &bull; ЕГИПЕТСКИЙ ХЛОПОК</span>
+                <div class="card-rating">
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="reviews-count">(62)</span>
+                </div>
+              </div>
+              <h3 class="card-title">Комплект постельного белья "Graphite Onyx"</h3>
+              <p class="card-fabric-info">Шелковистый блеск и непревзойденная прочность длинноволокнистого хлопка</p>
+
+              <div class="color-swatches">
+                <button class="swatch active" style="background-color: #242422;" title="Graphite Onyx"></button>
+                <button class="swatch" style="background-color: #EDE8DE;" title="Milky Ivory"></button>
+                <button class="swatch" style="background-color: #747E70;" title="Sage Mist"></button>
+              </div>
+
+              <div class="card-footer">
+                <div class="price-wrap">
+                  <span class="price-amount" data-rub="28500">28 500 ₽</span>
+                  <span class="price-hint">Пододеяльник + 2 наволочки + простыня</span>
+                </div>
+                <button class="btn-add-cart" data-id="2" aria-label="В корзину">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3: Fairy Tales Capsule Collection -->
+          <article class="product-card" data-category="capsule" data-id="3">
+            <div class="card-media">
+              <span class="product-tag tag-limited">Лимитированная капсула</span>
+              <img src="assets/images/product-capsule-flora.svg" alt="Капсульная коллекция Сказки Пушкина Царевна Лебедь" class="product-img" loading="lazy">
+              <div class="card-overlay-actions">
+                <button class="btn-quick-view" data-id="3" aria-label="Быстрый просмотр">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  </svg>
+                  <span>Быстрый просмотр</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="card-material">АВТОРСКИЙ ШЕЛК &bull; СКАЗКИ ПУШКИНА</span>
+                <div class="card-rating">
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="reviews-count">(34)</span>
+                </div>
+              </div>
+              <h3 class="card-title">Комплект "Царевна-Лебедь &bull; Лукоморье"</h3>
+              <p class="card-fabric-info">Художественная графика по мотивам русских сказок на нежнейшем шелке</p>
+
+              <div class="color-swatches">
+                <button class="swatch active" style="background-color: #F4EFE6;" title="Fairytale Toile"></button>
+                <button class="swatch" style="background-color: #647361;" title="Slavic Sage"></button>
+              </div>
+
+              <div class="card-footer">
+                <div class="price-wrap">
+                  <span class="price-amount" data-rub="62000">62 000 ₽</span>
+                  <span class="price-hint">Подарочный бокс с сертификатом подлинности</span>
+                </div>
+                <button class="btn-add-cart" data-id="3" aria-label="В корзину">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4: Mulberry Silk Kimono Robe -->
+          <article class="product-card" data-category="loungewear" data-id="4">
+            <div class="card-media">
+              <span class="product-tag tag-luxury">Haute Couture</span>
+              <img src="assets/images/product-silk-robe.svg" alt="Шелковое кимоно ручной работы Mollen Emerald Forest" class="product-img" loading="lazy">
+              <div class="card-overlay-actions">
+                <button class="btn-quick-view" data-id="4" aria-label="Быстрый просмотр">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  </svg>
+                  <span>Быстрый просмотр</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="card-material">100% ШЕЛКОВЫЙ АТЛАС &bull; РУЧНАЯ РАБОТА</span>
+                <div class="card-rating">
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="reviews-count">(51)</span>
+                </div>
+              </div>
+              <h3 class="card-title">Шелковое кимоно макси "Emerald Forest"</h3>
+              <p class="card-fabric-info">Элегантный крой с глубоким запахом, широким поясом-оби и контрастным кантом</p>
+
+              <div class="color-swatches">
+                <button class="swatch active" style="background-color: #1F3F32;" title="Emerald Forest"></button>
+                <button class="swatch" style="background-color: #FAF4EB;" title="Pearl Ivory"></button>
+                <button class="swatch" style="background-color: #242422;" title="Onyx Night"></button>
+              </div>
+
+              <div class="card-footer">
+                <div class="price-wrap">
+                  <span class="price-amount" data-rub="36000">36 000 ₽</span>
+                  <span class="price-hint">Размеры XS-S, M-L, XL</span>
+                </div>
+                <button class="btn-add-cart" data-id="4" aria-label="В корзину">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 5: Anti-Aging Silk Pillowcase -->
+          <article class="product-card" data-category="silk" data-id="5">
+            <div class="card-media">
+              <span class="product-tag tag-bestseller">Beauty Must-Have</span>
+              <img src="assets/images/product-silk-pillowcase.svg" alt="Шелковая наволочка Rose Quartz Mollen с кантом" class="product-img" loading="lazy">
+              <div class="card-overlay-actions">
+                <button class="btn-quick-view" data-id="5" aria-label="Быстрый просмотр">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  </svg>
+                  <span>Быстрый просмотр</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="card-material">100% ШЕЛК MULBERRY 22 MOMME</span>
+                <div class="card-rating">
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="reviews-count">(112)</span>
+                </div>
+              </div>
+              <h3 class="card-title">Шелковая наволочка "Rose Quartz" 50x70</h3>
+              <p class="card-fabric-info">Французский кант 5 см, потайная молния YKK. Защита волос от спутывания</p>
+
+              <div class="color-swatches">
+                <button class="swatch active" style="background-color: #E8D4CA;" title="Rose Quartz"></button>
+                <button class="swatch" style="background-color: #FAF4EB;" title="Champagne"></button>
+                <button class="swatch" style="background-color: #242422;" title="Onyx"></button>
+              </div>
+
+              <div class="card-footer">
+                <div class="price-wrap">
+                  <span class="price-amount" data-rub="9500">9 500 ₽</span>
+                  <span class="price-hint">В комплекте шелковая маска для сна</span>
+                </div>
+                <button class="btn-add-cart" data-id="5" aria-label="В корзину">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 6: Scented Amber Candle -->
+          <article class="product-card" data-category="accessories" data-id="6">
+            <div class="card-media">
+              <span class="product-tag tag-luxury">Ароматерапия</span>
+              <img src="assets/images/product-candle.svg" alt="Интерьерная свеча Amber and Cashmere Wood Mollen" class="product-img" loading="lazy">
+              <div class="card-overlay-actions">
+                <button class="btn-quick-view" data-id="6" aria-label="Быстрый просмотр">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  </svg>
+                  <span>Быстрый просмотр</span>
+                </button>
+              </div>
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="card-material">НАТУРАЛЬНЫЙ СОЕВЫЙ ВОСК &bull; 260Г</span>
+                <div class="card-rating">
+                  <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="reviews-count">(29)</span>
+                </div>
+              </div>
+              <h3 class="card-title">Свеча "Amber & Cashmere Wood"</h3>
+              <p class="card-fabric-info">Ноты теплой амбры, кедрового дерева, мадагаскарской ванили и шелкового мускуса</p>
+
+              <div class="color-swatches">
+                <button class="swatch active" style="background-color: #4A3525;" title="Dark Amber Glass"></button>
+              </div>
+
+              <div class="card-footer">
+                <div class="price-wrap">
+                  <span class="price-amount" data-rub="5800">5 800 ₽</span>
+                  <span class="price-hint">Время горения до 60 часов</span>
+                </div>
+                <button class="btn-add-cart" data-id="6" aria-label="В корзину">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MATERIAL HERITAGE COMPARISON SECTION -->
+    <section class="section materials-section" id="materials">
+      <div class="container">
+        <div class="section-header-centered">
+          <span class="sub-heading">MATIÈRES NOBLES</span>
+          <h2 class="section-title">Философия исключительных тканей</h2>
+          <p class="section-lead">
+            Для постельного белья Mollen используются только два благороднейших материала в мире: 
+            органический шелк Mulberry и ультра-длинноволокнистый хлопок Mako-Satin.
+          </p>
+        </div>
+
+        <div class="materials-grid">
+          
+          <!-- Card 1: Mulberry Silk -->
+          <div class="material-card">
+            <div class="material-img-wrap">
+              <img src="assets/images/material-silk.svg" alt="Шелк Mulberry Grade 6A" loading="lazy">
+            </div>
+            <div class="material-content">
+              <div class="mat-badge">Золотой эталон сна</div>
+              <h3 class="mat-title">100% Органический шелк Mulberry</h3>
+              <p class="mat-desc">
+                Создается гусеницами шелкопряда, питающимися исключительно листьями белой шелковицы. 
+                Мы используем наивысший мировой сорт <strong>Grade 6A</strong> плотностью <strong>22 Momme</strong>, 
+                обладающий идеальным балансом воздушности и износостойкости.
+              </p>
+              
+              <ul class="mat-features-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>18 полезных аминокислот</strong> — естественный уход за кожей лица</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Идеальная терморегуляция</strong> — прохлада летом и уютное тепло зимой</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Абсолютная гипоаллергенность</strong> — устойчив к пылевым клещам</span>
+                </li>
+              </ul>
+              <a href="#collections" class="mat-link" data-filter-trigger="silk">Смотреть изделия из шелка &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Card 2: Egyptian Mako-Satin -->
+          <div class="material-card">
+            <div class="material-img-wrap">
+              <img src="assets/images/material-cotton.svg" alt="Египетский хлопок Мако-Сатин" loading="lazy">
+            </div>
+            <div class="material-content">
+              <div class="mat-badge">Роскошь пятизвездочных отелей</div>
+              <h3 class="mat-title">Египетский Мако-Сатин 600 TC</h3>
+              <p class="mat-desc">
+                Ткется из элитного хлопка Giza с экстремальной длиной волокна свыше 37 мм. 
+                Специальное сатиновое переплетение нитей плотностью 600 нитей на дюйм (Thread Count) 
+                создает струящуюся драпировку и благородный матовый блеск.
+              </p>
+
+              <ul class="mat-features-list">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>До 400 циклов стирок</strong> без потери шелковистости и яркости</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Безупречная воздухопроницаемость</strong> — ткань свободно дышит</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span><strong>Не скатывается и не мнется</strong> при деликатном уходе</span>
+                </li>
+              </ul>
+              <a href="#collections" class="mat-link" data-filter-trigger="satin">Смотреть комплекты из сатина &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CAPSULE "FAIRY TALES" STORYTELLING BANNER -->
+    <section class="section capsule-banner-section" id="capsule">
+      <div class="container capsule-box">
+        <div class="capsule-grid">
+          <div class="capsule-visual">
+            <img src="assets/images/product-capsule-flora.svg" alt="Коллекция Сказки Пушкина Mollen" class="capsule-img" loading="lazy">
+          </div>
+          <div class="capsule-text">
+            <div class="capsule-tag">АВТОРСКИЙ ПРОЕКТ</div>
+            <h2 class="capsule-heading">Капсула "Сказки Пушкина"</h2>
+            <p class="capsule-quote">
+              <em>«И днем и ночью кот ученый все ходит по цепи кругом...»</em>
+            </p>
+            <p class="capsule-description">
+              Вдохновленная чарующими образами сказок Александра Сергеевича Пушкина, эта коллекция объединяет 
+              старинные гравюрные мотивы с современной эстетикой высокой моды. Каждое полотно расписано 
+              художниками Mollen и перенесено на 100% шелк экологичными гипоаллергенными красками.
+            </p>
+            <div class="capsule-btn-row">
+              <button class="btn btn-primary" id="btnExploreCapsule" data-id="3">
+                <span>Заказать сет "Царевна-Лебедь"</span>
+              </button>
+              <button class="btn btn-secondary-white" id="btnAtelierStory">
+                <span>История создания</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL LOOKBOOK SECTION -->
+    <section class="section lookbook-section" id="lookbook">
+      <div class="container">
+        <div class="section-header-centered">
+          <span class="sub-heading">L'ART DE VIVRE</span>
+          <h2 class="section-title">Эстетика спальни Mollen</h2>
+          <p class="section-lead">
+            Погрузитесь в атмосферу утреннего спокойствия, кинематографичного света и шелковых фактур.
+          </p>
+        </div>
+
+        <div class="lookbook-gallery">
+          <div class="lookbook-item item-large">
+            <img src="assets/images/lookbook-1.svg" alt="Lookbook Mollen Morning Bedroom" loading="lazy">
+            <div class="lookbook-caption">
+              <h4>Утренний ритуал</h4>
+              <p>Шелковые простыни цвета слоновой кости и фарфор ручной работы</p>
+            </div>
+          </div>
+          <div class="lookbook-item item-detail">
+            <img src="assets/images/lookbook-2.svg" alt="Lookbook Silk Texture" loading="lazy">
+            <div class="lookbook-caption">
+              <h4>Тайны ремесла</h4>
+              <p>Золотой французский шов и плотность 22 Momme</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lookbook-quote-block">
+          <blockquote>
+            "Мы верим, что постель — это не просто место для сна. Это святилище вашего восстановления, 
+            тишины и подлинной гармонии с собой."
+          </blockquote>
+          <cite>— Ольга Мелехова, основательница и креативный директор MOLLEN</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ATELIER BESPOKE CONCIERGE SERVICE -->
+    <section class="section atelier-section" id="atelier">
+      <div class="container atelier-wrapper">
+        <div class="atelier-grid">
+          <div class="atelier-info">
+            <span class="sub-heading">BESPOKE SERVICES</span>
+            <h2 class="section-title">Индивидуальный пошив &bull; Ателье Mollen</h2>
+            <p class="atelier-p">
+              У вас нестандартный круглый матрас, кровать размера Emperor 240x240 или высокие борта 45 см? 
+              Мастера нашего ателье сошьют комплект по вашим точным чертежам, добавят монограмму семьи 
+              золотыми шелковыми нитями и доставят в персональном дубовом кофре.
+            </p>
+
+            <div class="atelier-steps">
+              <div class="step-card">
+                <span class="step-number">01</span>
+                <h5>Консультация стилиста</h5>
+                <p>Подбор оттенков и фактур под цветовую гамму вашей спальни и освещение.</p>
+              </div>
+              <div class="step-card">
+                <span class="step-number">02</span>
+                <h5>Снятие мерок</h5>
+                <p>Выезд консьержа с образцами тканей в любую точку Москвы и МО.</p>
+              </div>
+              <div class="step-card">
+                <span class="step-number">03</span>
+                <h5>Пошив за 3-5 дней</h5>
+                <p>Французские закрытые швы, фирменная фурнитура и персонализация.</p>
+              </div>
+            </div>
+
+            <div class="atelier-actions">
+              <button class="btn btn-primary" id="btnAtelierModalOpen">
+                <span>Записаться на примерку в ателье</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="atelier-form-card" id="atelierFormContainer">
+            <h3>Заказать выезд консьержа</h3>
+            <p>Курьер доставит образцы всех оттенков шелка и мако-сатина к вам домой.</p>
+            
+            <form id="conciergeForm" class="concierge-form">
+              <div class="form-group">
+                <label for="conciergeName">Ваше имя</label>
+                <input type="text" id="conciergeName" placeholder="Екатерина" required>
+              </div>
+              <div class="form-group">
+                <label for="conciergePhone">Номер телефона</label>
+                <input type="tel" id="conciergePhone" placeholder="+7 (999) 000-00-00" required>
+              </div>
+              <div class="form-group">
+                <label for="conciergeCity">Город / Адрес</label>
+                <input type="text" id="conciergeCity" placeholder="Москва, ул. Знаменка, 8" required>
+              </div>
+              <div class="form-group">
+                <label for="conciergeFabric">Интересующая ткань</label>
+                <select id="conciergeFabric">
+                  <option value="all">Шелк Mulberry + Мако-Сатин (все образцы)</option>
+                  <option value="silk">Только 100% шелк Mulberry 22 Momme</option>
+                  <option value="satin">Только Мако-Сатин 600 TC</option>
+                  <option value="capsule">Капсула "Сказки Пушкина"</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="btnSubmitConcierge">
+                <span>Пригласить консьержа с образцами</span>
+              </button>
+              <p class="privacy-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS & REVIEWS SECTION -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header-centered">
+          <span class="sub-heading">CRITIQUE &amp; TÉMOIGNAGES</span>
+          <h2 class="section-title">О нас говорят</h2>
+          <p class="section-lead">
+            Отзывы ведущих модных изданий и постоянных ценителей премиального комфорта.
+          </p>
+        </div>
+
+        <!-- Press Quotes Bar -->
+        <div class="press-quotes-grid">
+          <div class="press-card">
+            <span class="press-logo">VOGUE</span>
+            <p class="press-quote">
+              "Mollen превращает текстиль для сна в объект коллекционирования и подлинного кутюрного искусства."
+            </p>
+            <span class="press-date">Vogue Living Russia</span>
+          </div>
+
+          <div class="press-card">
+            <span class="press-logo">HARPER'S BAZAAR</span>
+            <p class="press-quote">
+              "Идеальный шелковый комплект Mulberry, который делает каждое пробуждение ритуалом заботы о себе."
+            </p>
+            <span class="press-date">Beauty &amp; Style</span>
+          </div>
+
+          <div class="press-card">
+            <span class="press-logo">ARCHITECTURAL DIGEST</span>
+            <p class="press-quote">
+              "Тончайшая грань между сказочным фольклором и сдержанным европейским минимализмом."
+            </p>
+            <span class="press-date">AD Magazine</span>
+          </div>
+
+          <div class="press-card">
+            <span class="press-logo">ELLE DECORATION</span>
+            <p class="press-quote">
+              "Тактильный восторг: 600 нитей длинноволокнистого хлопка создают ощущение королевского комфорта."
+            </p>
+            <span class="press-date">Design &amp; Interior</span>
+          </div>
+        </div>
+
+        <!-- Real Client Reviews Grid -->
+        <div class="client-reviews-grid">
+          <div class="review-box">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-text">
+              "Заказывала комплект Champagne Pearl из натурального шелка. Это лучшее постельное белье, 
+              на котором мне доводилось спать! Волосы утром идеально гладкие, без заломов на лице. 
+              Коробка с лентами пахнет роскошным нишевым парфюмом."
+            </p>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Анна Воронова</span>
+              <span class="reviewer-verified">&#10003; Проверенный покупатель &bull; Москва</span>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-text">
+              "Подарил супруге кимоно Emerald Forest и наволочки из капсулы Сказки. Восторг неописуемый! 
+              Качество швов идеальное, ткань струится как вода. Отдельное спасибо консьерж-сервису за срочную доставку."
+            </p>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Михаил Романов</span>
+              <span class="reviewer-verified">&#10003; Проверенный покупатель &bull; Санкт-Петербург</span>
+            </div>
+          </div>
+
+          <div class="review-box">
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="review-text">
+              "Мако-сатин Graphite Onyx превзошел все ожидания. Плотный, но невероятно мягкий, после пяти стирок 
+              выглядит так же, как в первый день. Теперь за постельным только в Mollen!"
+            </p>
+            <div class="reviewer-info">
+              <span class="reviewer-name">Дарья Соколова</span>
+              <span class="reviewer-verified">&#10003; Проверенный покупатель &bull; Казань</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NEWSLETTER & CONCIERGE CLUB -->
+    <section class="newsletter-section">
+      <div class="container newsletter-box">
+        <div class="newsletter-content">
+          <span class="sub-heading">MOLLEN PRIVILEGE CLUB</span>
+          <h2 class="newsletter-title">Присоединяйтесь к закрытому клубу</h2>
+          <p class="newsletter-desc">
+            Получите комплимент <strong>10% на первый заказ</strong> по промокоду <code>MOLLEN10</code>, 
+            приглашения на закрытые презентации новых капсул и иллюстрированный гид по уходу за шелком.
+          </p>
+
+          <form id="newsletterForm" class="newsletter-form">
+            <div class="nl-input-group">
+              <input type="email" id="nlEmail" placeholder="Введите ваш e-mail" required>
+              <button type="submit" class="btn btn-primary" id="btnNlSubmit">
+                <span>Подписаться</span>
+              </button>
+            </div>
+          </form>
+          <div class="nl-success-msg" id="nlSuccessMsg">
+            &#10003; Благодарим за регистрацию! Ваш персональный промокод <strong>MOLLEN10</strong> уже ждет в корзине.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MASTER LUXURY FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-col brand-col">
+        <img src="assets/images/logo.svg" alt="MOLLEN Haute Literie" class="footer-logo" width="180">
+        <p class="brand-manifesto">
+          Российский премиальный бренд постельного белья, домашнего текстиля и капсульных коллекций 
+          из натурального шелка Mulberry и египетского мако-сатина.
+        </p>
+        <div class="boutique-info">
+          <p><strong>Флагманский бутик:</strong></p>
+          <p>Москва, Кутузовский проспект, 12</p>
+          <p>Телефон: +7 (495) 820-22-10</p>
+          <p>E-mail: atelier@mollen.ru</p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Коллекции</h4>
+        <ul class="footer-links">
+          <li><a href="#collections" data-filter-trigger="silk">Шелк Mulberry 22 Momme</a></li>
+          <li><a href="#collections" data-filter-trigger="satin">Мако-Сатин 600 TC</a></li>
+          <li><a href="#collections" data-filter-trigger="capsule">Сказки Пушкина</a></li>
+          <li><a href="#collections" data-filter-trigger="loungewear">Шелковые кимоно и пижамы</a></li>
+          <li><a href="#collections" data-filter-trigger="accessories">Шелковые наволочки</a></li>
+          <li><a href="#collections" data-filter-trigger="accessories">Ароматические свечи</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Клиентский сервис</h4>
+        <ul class="footer-links">
+          <li><a href="#atelier">Примерка в интерьере</a></li>
+          <li><a href="#atelier">Индивидуальный пошив</a></li>
+          <li><a href="#materials">Гид по размерам и тканям</a></li>
+          <li><a href="#materials">Инструкция по уходу за шелком</a></li>
+          <li><a href="#reviews">Подарочные сертификаты</a></li>
+          <li><a href="#announcementBar">Доставка и оплата</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">О бренде</h4>
+        <ul class="footer-links">
+          <li><a href="#lookbook">Философия MOLLEN</a></li>
+          <li><a href="#atelier">Московское ателье</a></li>
+          <li><a href="#capsule">Художники и коллаборации</a></li>
+          <li><a href="#reviews">Пресса о нас</a></li>
+          <li><a href="#announcementBar">Контакты бутика</a></li>
+          <li><a href="#newsletterForm">Корпоративные подарки</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Legal Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 MOLLEN HAUTE LITERIE. Все права защищены.</p>
+        <div class="legal-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+          <a href="#">Условия примерки</a>
+        </div>
+        <div class="payment-badges">
+          <span>MIR</span> &bull; <span>VISA</span> &bull; <span>MASTERCARD</span> &bull; <span>СБП</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QUICK VIEW PRODUCT MODAL -->
+  <div class="modal-backdrop" id="quickViewModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Закрыть">&times;</button>
+      
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img src="assets/images/product-silk-set.svg" alt="Product Preview" id="modalProductImg">
+        </div>
+
+        <div class="modal-details">
+          <div class="modal-eyebrow" id="modalEyebrow">100% ШЕЛК MULBERRY 22 MOMME</div>
+          <h2 class="modal-title" id="modalTitle">Комплект постельного белья</h2>
+          <div class="modal-rating">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span id="modalRatingText">5.0 (48 отзывов)</span>
+          </div>
+
+          <div class="modal-price" id="modalPrice" data-rub="54000">54 000 ₽</div>
+          
+          <p class="modal-desc" id="modalDesc">
+            Исключительная плотность 22 Momme обеспечивает долгие годы шелковистой мягкости. 
+            Пододеяльник на скрытых пуговицах, наволочки с французским кантом 5 см.
+          </p>
+
+          <!-- Select Size -->
+          <div class="option-group">
+            <label class="option-label">Выберите размер комплекта:</label>
+            <div class="size-chips" id="modalSizeChips">
+              <button class="size-chip" data-size="1.5-спальный (150x210)" data-add="0">1.5-спальный</button>
+              <button class="size-chip active" data-size="Двуспальный (200x220)" data-add="0">Двуспальный</button>
+              <button class="size-chip" data-size="Евро Maxi (220x240)" data-add="6000">Евро Maxi (+6 000 ₽)</button>
+              <button class="size-chip" data-size="King Size (240x260)" data-add="10000">King Size (+10 000 ₽)</button>
+            </div>
+          </div>
+
+          <!-- Select Color Swatch -->
+          <div class="option-group">
+            <label class="option-label">Оттенок: <strong id="modalSelectedColorName">Champagne Pearl</strong></label>
+            <div class="color-swatches" id="modalColorSwatches">
+              <button class="swatch active" style="background-color: #FAF4EB;" data-color="Champagne Pearl"></button>
+              <button class="swatch" style="background-color: #E8D5CA;" data-color="Rose Quartz"></button>
+              <button class="swatch" style="background-color: #2F3630;" data-color="Forest Emerald"></button>
+              <button class="swatch" style="background-color: #222220;" data-color="Onyx Night"></button>
+            </div>
+          </div>
+
+          <!-- Add Monogram Personalization Checkbox -->
+          <div class="monogram-option">
+            <label class="checkbox-container">
+              <input type="checkbox" id="monogramCheckbox">
+              <span class="checkmark"></span>
+              <span>Добавить именную вышивку монограммы шелком (+2 500 ₽)</span>
+            </label>
+            <input type="text" id="monogramTextInput" placeholder="Ваши инициалы (напр. Е.В.)" maxlength="6" class="monogram-input" style="display: none;">
+          </div>
+
+          <!-- Modal Action CTA -->
+          <div class="modal-cta-row">
+            <button class="btn btn-primary btn-full" id="modalAddToCartBtn">
+              <span>Добавить в корзину &bull; </span>
+              <span id="modalFinalPriceBtn">54 000 ₽</span>
+            </button>
+          </div>
+
+          <div class="modal-perks">
+            <span>&#10003; Фирменная коробка Mollen с лентой</span> &bull; 
+            <span>&#10003; Бесплатная доставка с примеркой</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE-OVER MINI CART DRAWER -->
+  <div class="cart-backdrop" id="cartBackdrop">
+    <div class="cart-drawer" id="cartDrawer">
+      
+      <div class="cart-header">
+        <div class="cart-title-row">
+          <h3>Ваша корзина</h3>
+          <span class="cart-count-badge" id="cartTotalItemsBadge">0 товаров</span>
+        </div>
+        <button class="cart-close-btn" id="cartCloseBtn" aria-label="Закрыть корзину">&times;</button>
+      </div>
+
+      <!-- Free shipping progress bar -->
+      <div class="shipping-progress-container">
+        <div class="shipping-msg" id="shippingProgressMsg">До бесплатной доставки осталось 15 000 ₽</div>
+        <div class="progress-track">
+          <div class="progress-bar" id="shippingProgressBar" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Items List -->
+      <div class="cart-items-body" id="cartItemsList">
+        <!-- Rendered dynamically by main.js -->
+        <div class="cart-empty-state">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <p>В вашей корзине пока пусто</p>
+          <a href="#collections" class="btn btn-secondary-white" id="btnEmptyShop">Выбрать комплект</a>
+        </div>
+      </div>
+
+      <!-- Cart Footer & Checkout -->
+      <div class="cart-footer">
+        <!-- Promo Code Input -->
+        <div class="promo-box">
+          <div class="promo-input-row">
+            <input type="text" id="promoCodeInput" placeholder="Промокод (введите MOLLEN10)">
+            <button class="btn-promo-apply" id="btnApplyPromo">Применить</button>
+          </div>
+          <div class="promo-applied-badge" id="promoAppliedBadge" style="display: none;">
+            <span>Скидка 10% применена! (-<span id="promoDiscountAmount">0 ₽</span>)</span>
+            <button id="btnRemovePromo" class="remove-promo">&times;</button>
+          </div>
+        </div>
+
+        <!-- Price Totals -->
+        <div class="cart-totals">
+          <div class="total-row">
+            <span>Промежуточный итог:</span>
+            <span id="cartSubtotalText">0 ₽</span>
+          </div>
+          <div class="total-row" id="cartDiscountRow" style="display: none;">
+            <span>Скидка по промокоду:</span>
+            <span class="discount-val" id="cartDiscountText">-0 ₽</span>
+          </div>
+          <div class="total-row">
+            <span>Доставка по РФ:</span>
+            <span class="shipping-val" id="cartShippingText">Бесплатно</span>
+          </div>
+          <div class="total-row total-highlight">
+            <span>Итого к оплате:</span>
+            <span class="total-price" id="cartGrandTotalText">0 ₽</span>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-full checkout-btn" id="btnCheckout">
+          <span>Оформить заказ с примеркой</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+
+        <p class="cart-safe-note">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7A8574" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          Безопасная оплата &bull; Оплата после тактильной примерки курьеру
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CHECKOUT SUCCESS MODAL -->
+  <div class="modal-backdrop" id="checkoutSuccessModal">
+    <div class="modal-dialog checkout-dialog">
+      <button class="modal-close-btn" id="checkoutSuccessClose">&times;</button>
+      <div class="checkout-success-body">
+        <div class="success-icon">&#10003;</div>
+        <h3>Ваш заказ успешно оформлен!</h3>
+        <p class="order-num">Номер заказа: <strong>#MLN-2026-8941</strong></p>
+        <p class="order-desc">
+          Благодарим вас за выбор MOLLEN Haute Literie. Персональный консьерж свяжется с вами 
+          в течение 15 минут для согласования удобного времени доставки с примеркой.
+        </p>
+        <div class="order-summary-box" id="checkoutSuccessSummary"></div>
+        <button class="btn btn-primary btn-full" id="btnBackToStore">Продолжить покупки</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

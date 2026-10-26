@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F6F2"/>
+      <stop offset="100%" stop-color="#EBE7DE"/>
+    </linearGradient>
+    <linearGradient id="glassAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D2F22"/>
+      <stop offset="40%" stop-color="#5E432D"/>
+      <stop offset="70%" stop-color="#423021"/>
+      <stop offset="100%" stop-color="#241B13"/>
+    </linearGradient>
+    <radialGradient id="flameGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF2A8" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#FFB347" stop-opacity="0.6"/>
+      <stop offset="80%" stop-color="#FF7A00" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="pShadow6" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#2B1E14" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgGrad6)"/>
+  <ellipse cx="300" cy="480" rx="190" ry="38" fill="#DDD5C8" opacity="0.6"/>
+
+  <g transform="translate(190, 140)" filter="url(#pShadow6)">
+    <!-- Candle Flame & Glow Aura -->
+    <circle cx="110" cy="50" r="50" fill="url(#flameGlow)"/>
+    <!-- Organic Teardrop Flame -->
+    <path d="M110 30C100 45 98 60 105 68C110 74 116 72 118 66C122 58 118 45 110 30Z" fill="#FFA500"/>
+    <path d="M110 40C105 50 104 60 108 65C112 70 115 68 116 63C118 57 115 48 110 40Z" fill="#FFF2A8"/>
+    <!-- Wick -->
+    <path d="M110 68V78" stroke="#181816" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Soy Wax Rim -->
+    <ellipse cx="110" cy="85" rx="85" ry="24" fill="#FBF6EE" stroke="#E5DEC8" stroke-width="2"/>
+    <ellipse cx="110" cy="85" rx="75" ry="20" fill="#F4ECE0"/>
+
+    <!-- Heavy Frosted Amber Glass Tumbler -->
+    <path d="M25 85
+             C25 85 20 280 35 310
+             C48 335 172 335 185 310
+             C200 280 195 85 195 85
+             Z"
+          fill="url(#glassAmber)"/>
+    <ellipse cx="110" cy="310" rx="75" ry="16" fill="#1C140C"/>
+
+    <!-- Glass Reflection Highlights -->
+    <path d="M40 105C38 180 44 260 52 295" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.25"/>
+    <path d="M180 105C182 180 176 260 168 295" stroke="#DCAE78" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- Minimalist Botanical Label Paper -->
+    <g transform="translate(50, 140)">
+      <rect width="120" height="130" rx="3" fill="#FAF7F2" stroke="#E2DAC8" stroke-width="1"/>
+      <rect x="6" y="6" width="108" height="118" stroke="#C5A880" stroke-width="0.8"/>
+      <!-- Label Typography -->
+      <text x="60" y="32" font-family="'Cormorant Garamond', Georgia, serif" font-size="16" font-weight="700" letter-spacing="3" fill="#181816" text-anchor="middle">MOLLEN</text>
+      <line x1="40" y1="40" x2="80" y2="40" stroke="#C5A880" stroke-width="0.8"/>
+      <text x="60" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="600" letter-spacing="1.5" fill="#756754" text-anchor="middle">HOME COUTURE</text>
+      <text x="60" y="80" font-family="'Cormorant Garamond', Georgia, serif" font-size="13" font-style="italic" fill="#2E261E" text-anchor="middle">Amber &amp; Cashmere</text>
+      <text x="60" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" letter-spacing="1" fill="#998C7B" text-anchor="middle">NATURAL SOY WAX &bull; 260G</text>
+      <text x="60" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" letter-spacing="0.8" fill="#B3A594" text-anchor="middle">60 HOURS BURN TIME</text>
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(40, 40)">
+    <rect width="165" height="30" rx="15" fill="#3D2F22"/>
+    <text x="82" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="1.5" fill="#E8DEC8" text-anchor="middle">AROMA COUTURE</text>
+  </g>
+</svg>

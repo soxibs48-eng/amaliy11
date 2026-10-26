@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 850" fill="none">
+  <defs>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFECE6"/>
+      <stop offset="50%" stop-color="#E5E0D6"/>
+      <stop offset="100%" stop-color="#DCD6CA"/>
+    </linearGradient>
+    <linearGradient id="sunbeam" x1="0%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8EE" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#F5E8D2" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#EAE3D2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#C7BBAA"/>
+      <stop offset="100%" stop-color="#9C8C76"/>
+    </linearGradient>
+    <linearGradient id="silkDuvet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#F7F3EB"/>
+      <stop offset="70%" stop-color="#E8E0D2"/>
+      <stop offset="100%" stop-color="#D7CDBC"/>
+    </linearGradient>
+    <linearGradient id="silkPillow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F2"/>
+      <stop offset="60%" stop-color="#ECE5D8"/>
+      <stop offset="100%" stop-color="#DDD3C4"/>
+    </linearGradient>
+    <linearGradient id="silkThrow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9E805A"/>
+      <stop offset="50%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#8C6E48"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#241E18" flood-opacity="0.14"/>
+    </filter>
+    <filter id="bedShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="30" stdDeviation="35" flood-color="#14110E" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <!-- Room Interior Background -->
+  <rect width="1440" height="850" fill="url(#wallGrad)"/>
+
+  <!-- Architectural Wall Molding & Arch -->
+  <path d="M120 0H420V480C420 562.8 352.8 630 270 630C187.2 630 120 562.8 120 480V0Z" fill="#F4F1EB" opacity="0.6"/>
+  <line x1="0" y1="580" x2="1440" y2="580" stroke="#CFC6B8" stroke-width="1.5"/>
+
+  <!-- Luxury Parquet Wood Floor -->
+  <rect y="580" width="1440" height="270" fill="url(#floorGrad)"/>
+  <!-- Floor Planks Perspective -->
+  <g stroke="#8A7A64" stroke-width="0.8" opacity="0.45">
+    <line x1="120" y1="580" x2="-80" y2="850"/>
+    <line x1="320" y1="580" x2="180" y2="850"/>
+    <line x1="520" y1="580" x2="440" y2="850"/>
+    <line x1="720" y1="580" x2="700" y2="850"/>
+    <line x1="920" y1="580" x2="960" y2="850"/>
+    <line x1="1120" y1="580" x2="1220" y2="850"/>
+    <line x1="1320" y1="580" x2="1480" y2="850"/>
+    <line x1="0" y1="670" x2="1440" y2="670" stroke-dasharray="14 10"/>
+    <line x1="0" y1="760" x2="1440" y2="760" stroke-dasharray="18 12"/>
+  </g>
+
+  <!-- Large French Window Left -->
+  <g transform="translate(80, 50)">
+    <rect x="0" y="0" width="220" height="480" rx="110" fill="#FCFAF6" stroke="#C9BEAC" stroke-width="3"/>
+    <!-- Outer garden greenery silhouette -->
+    <path d="M15 320C35 290 70 305 90 280C110 255 140 280 170 250C190 230 215 270 220 320V480H0V400C5 360 10 330 15 320Z" fill="#8FA489" opacity="0.35"/>
+    <!-- Window Grid lines -->
+    <line x1="110" y1="0" x2="110" y2="480" stroke="#C9BEAC" stroke-width="2"/>
+    <line x1="0" y1="180" x2="220" y2="180" stroke="#C9BEAC" stroke-width="2"/>
+    <line x1="0" y1="320" x2="220" y2="320" stroke="#C9BEAC" stroke-width="2"/>
+    <!-- Sheer Curtain -->
+    <path d="M0 0C40 120 20 280 50 480H0V0Z" fill="#FFFFFF" opacity="0.55"/>
+  </g>
+
+  <!-- Golden Sunbeam Beam streaming across room -->
+  <polygon points="190,120 1250,850 780,850 150,300" fill="url(#sunbeam)"/>
+
+  <!-- Minimalist Bedside Table (Nightstand Left) -->
+  <g transform="translate(380, 470)" filter="url(#softShadow)">
+    <ellipse cx="60" cy="110" rx="60" ry="12" fill="#756754" opacity="0.4"/>
+    <rect x="15" y="20" width="90" height="90" rx="14" fill="#EAE4D8" stroke="#D3C9B8" stroke-width="1"/>
+    <!-- Marble texture accent -->
+    <ellipse cx="60" cy="20" rx="45" ry="10" fill="#F8F6F1"/>
+    <!-- Ceramic Vase & Dried Botanicals -->
+    <path d="M52 18C52 10 50 0 60 -12C70 0 68 10 68 18Z" fill="#A89F91"/>
+    <path d="M60 -12C50 -35 30 -50 20 -70" stroke="#7A6E5C" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M60 -12C68 -40 75 -65 95 -80" stroke="#7A6E5C" stroke-width="1.6" stroke-linecap="round"/>
+    <circle cx="20" cy="-70" r="4" fill="#C5A880"/>
+    <circle cx="26" cy="-60" r="3.5" fill="#C5A880"/>
+    <circle cx="95" cy="-80" r="4.5" fill="#C5A880"/>
+    <circle cx="85" cy="-65" r="3" fill="#C5A880"/>
+  </g>
+
+  <!-- Luxury Bed Setup (Center Stage) -->
+  <g transform="translate(460, 260)" filter="url(#bedShadow)">
+    <!-- Architectural Upholstered Headboard -->
+    <rect x="0" y="0" width="760" height="280" rx="20" fill="#DDD5C7" stroke="#CEC3B2" stroke-width="2"/>
+    <!-- Fluted panel vertical lines on headboard -->
+    <g stroke="#C8BCAB" stroke-width="1.2" opacity="0.8">
+      <line x1="76" y1="10" x2="76" y2="270"/>
+      <line x1="152" y1="10" x2="152" y2="270"/>
+      <line x1="228" y1="10" x2="228" y2="270"/>
+      <line x1="304" y1="10" x2="304" y2="270"/>
+      <line x1="380" y1="10" x2="380" y2="270"/>
+      <line x1="456" y1="10" x2="456" y2="270"/>
+      <line x1="532" y1="10" x2="532" y2="270"/>
+      <line x1="608" y1="10" x2="608" y2="270"/>
+      <line x1="684" y1="10" x2="684" y2="270"/>
+    </g>
+
+    <!-- Bed Platform Base -->
+    <rect x="-30" y="240" width="820" height="180" rx="12" fill="#3D372F"/>
+    <rect x="-20" y="230" width="800" height="15" rx="4" fill="#C5A880"/>
+
+    <!-- Premium Pillows Arrangement -->
+    <!-- Back Pillows (Large Oxford Cotton) -->
+    <rect x="40" y="110" width="200" height="130" rx="16" fill="url(#silkPillow)" transform="rotate(-4 140 175)" filter="url(#softShadow)"/>
+    <rect x="520" y="110" width="200" height="130" rx="16" fill="url(#silkPillow)" transform="rotate(4 620 175)" filter="url(#softShadow)"/>
+    <rect x="280" y="105" width="200" height="130" rx="16" fill="url(#silkPillow)" filter="url(#softShadow)"/>
+
+    <!-- Front Silk Pillowcases (Mulberry Silk with Piping & Sheen) -->
+    <g transform="translate(60, 160)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="180" height="105" rx="14" fill="#FAF6EE" stroke="#E6DCCA" stroke-width="2"/>
+      <path d="M10 25C50 15 110 28 170 20" stroke="#FFF" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+      <path d="M15 70C60 62 120 75 165 65" stroke="#E0D4C0" stroke-width="1.8" opacity="0.6"/>
+      <!-- Silk Piping Badge -->
+      <line x1="4" y1="4" x2="176" y2="4" stroke="#C5A880" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(520, 160)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="180" height="105" rx="14" fill="#FAF6EE" stroke="#E6DCCA" stroke-width="2"/>
+      <path d="M10 25C50 15 110 28 170 20" stroke="#FFF" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+      <path d="M15 70C60 62 120 75 165 65" stroke="#E0D4C0" stroke-width="1.8" opacity="0.6"/>
+      <line x1="4" y1="4" x2="176" y2="4" stroke="#C5A880" stroke-width="1.2"/>
+    </g>
+    <!-- Center Accent Pillow (Silk Velvet Bronze) -->
+    <g transform="translate(300, 175)" filter="url(#softShadow)">
+      <rect x="0" y="0" width="160" height="95" rx="12" fill="#8F724C" stroke="#A6875D" stroke-width="1.5"/>
+      <ellipse cx="80" cy="47" rx="60" ry="25" fill="#B39366" opacity="0.4"/>
+    </g>
+
+    <!-- Main Luxurious Silk Duvet (Voluminous, undulating folds) -->
+    <path d="M-15 250
+             C80 230 180 260 280 245
+             C380 230 480 260 580 245
+             C680 230 760 240 775 250
+             L800 480
+             C680 500 520 470 380 490
+             C240 510 100 480 -35 480
+             Z"
+          fill="url(#silkDuvet)"/>
+
+    <!-- Silk Sheen Highlights & Fluid Creases -->
+    <path d="M20 280C140 260 280 300 400 270C520 240 680 290 750 270" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity="0.65"/>
+    <path d="M-10 340C120 320 260 370 420 330C580 290 690 350 780 320" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity="0.45"/>
+    <path d="M30 400C160 380 310 425 480 390C620 360 720 410 770 385" stroke="#E2D6C3" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M60 450C200 430 350 460 510 435C650 415 730 440 760 430" stroke="#D3C5AE" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Folded Silk/Cashmere Bed Runner at the foot -->
+    <path d="M-30 420
+             C120 405 280 430 440 410
+             C600 390 720 415 790 410
+             L795 485
+             C710 495 560 475 420 490
+             C280 505 100 485 -35 485
+             Z"
+          fill="url(#silkThrow)" filter="url(#softShadow)"/>
+    <line x1="-30" y1="428" x2="790" y2="418" stroke="#D8BE96" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- Ambient Light Reflection on Foreground Wall/Floor -->
+  <circle cx="1200" cy="180" r="140" fill="#FFF9ED" opacity="0.3" filter="url(#softShadow)"/>
+
+  <!-- Elegant Hanging Pendant Light Brass / Opal Glass Right -->
+  <g transform="translate(1220, 0)">
+    <line x1="0" y1="0" x2="0" y2="280" stroke="#C5A880" stroke-width="2.5"/>
+    <!-- Brass Cap -->
+    <rect x="-18" y="275" width="36" height="12" rx="3" fill="#9E805A"/>
+    <!-- Opal Sphere Diffuser -->
+    <circle cx="0" cy="325" r="42" fill="#FFFDF8" stroke="#EFE6D4" stroke-width="2"/>
+    <circle cx="0" cy="325" r="58" fill="#FFF4D9" opacity="0.35"/>
+    <circle cx="-12" cy="312" r="14" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+
+  <!-- Subtle Editorial Watermark Tag -->
+  <text x="1360" y="800" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" font-style="italic" fill="#756754" text-anchor="end" letter-spacing="2">MOLLEN ATELIER &bull; COLLECTION 2026</text>
+</svg>

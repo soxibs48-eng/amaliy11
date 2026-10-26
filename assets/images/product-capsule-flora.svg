@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F6F2"/>
+      <stop offset="100%" stop-color="#EBE6DC"/>
+    </linearGradient>
+    <linearGradient id="capsuleSilk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F5"/>
+      <stop offset="50%" stop-color="#F2EDE2"/>
+      <stop offset="100%" stop-color="#E4DBCB"/>
+    </linearGradient>
+    <pattern id="toilePattern" width="80" height="80" patternUnits="userSpaceOnUse">
+      <!-- Fine botanical line art -->
+      <path d="M10 40C25 30 35 45 50 35C65 25 75 40 80 30" stroke="#7A8574" stroke-width="0.8" fill="none" opacity="0.45"/>
+      <path d="M40 10C30 25 45 35 35 50C25 65 40 75 30 80" stroke="#7A8574" stroke-width="0.8" fill="none" opacity="0.45"/>
+      <!-- Botanical leaves & golden bird / swan silhouette -->
+      <circle cx="25" cy="25" r="4" fill="#C5A880" opacity="0.5"/>
+      <path d="M22 25C15 20 18 10 25 12C32 10 35 20 28 25" fill="#7A8574" opacity="0.4"/>
+      <circle cx="65" cy="65" r="3" fill="#C5A880" opacity="0.4"/>
+      <path d="M60 62C55 58 58 52 64 54C70 52 72 58 68 62" fill="#7A8574" opacity="0.35"/>
+    </pattern>
+    <filter id="pShadow3" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#302C26" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgGrad3)"/>
+  <ellipse cx="300" cy="460" rx="230" ry="45" fill="#DCD5C7" opacity="0.6"/>
+
+  <g transform="translate(100, 110)" filter="url(#pShadow3)">
+    <!-- Base folded duvet with botanical toile pattern -->
+    <rect x="20" y="190" width="360" height="150" rx="16" fill="url(#capsuleSilk)"/>
+    <rect x="20" y="190" width="360" height="150" rx="16" fill="url(#toilePattern)"/>
+    <path d="M20 230C100 215 220 240 380 220" stroke="#FFFFFF" stroke-width="5" opacity="0.8"/>
+    <path d="M30 280C140 265 260 290 370 275" stroke="#D3C4A9" stroke-width="2.5" opacity="0.6"/>
+
+    <!-- Middle sheet in Sage Green silk -->
+    <rect x="40" y="130" width="320" height="100" rx="14" fill="#889582" stroke="#6F7C69" stroke-width="1.2"/>
+    <path d="M45 165C130 152 240 174 355 162" stroke="#A9B5A4" stroke-width="4" opacity="0.7"/>
+
+    <!-- Top Pillow with Fairy Tale illustration -->
+    <g transform="translate(60, 40)">
+      <rect x="0" y="0" width="280" height="130" rx="14" fill="url(#capsuleSilk)" stroke="#DDD2BE" stroke-width="1.5"/>
+      <rect x="0" y="0" width="280" height="130" rx="14" fill="url(#toilePattern)"/>
+      <rect x="14" y="14" width="252" height="102" rx="8" stroke="#889582" stroke-width="1.2"/>
+      
+      <!-- Swan Princess crest in center -->
+      <g transform="translate(140, 65)">
+        <ellipse cx="0" cy="0" rx="24" ry="24" fill="#FFFBF5" stroke="#C5A880" stroke-width="1"/>
+        <path d="M-10 6C-6 -8 8 -12 8 -4C8 2 -2 6 -6 8Z" fill="#C5A880"/>
+        <path d="M6 -5C8 -10 12 -8 10 -4Z" fill="#7A8574"/>
+        <circle cx="8" cy="-5" r="1" fill="#181816"/>
+      </g>
+    </g>
+
+    <!-- Silk Velvet Ribbon Wrap -->
+    <path d="M210 40V340" stroke="#7A8574" stroke-width="16"/>
+    <path d="M210 40V340" stroke="#A9B5A4" stroke-width="3"/>
+    <circle cx="210" cy="180" r="22" fill="#586353" stroke="#C5A880" stroke-width="2"/>
+    <text x="210" y="185" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" font-weight="700" fill="#FFF" text-anchor="middle">M</text>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(40, 40)">
+    <rect width="180" height="30" rx="15" fill="#5E6C5A"/>
+    <text x="90" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" letter-spacing="1.5" fill="#FFF" text-anchor="middle">CAPSULE &bull; FAIRY TALES</text>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="silkMatBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F5"/>
+      <stop offset="100%" stop-color="#EEE7DC"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#silkMatBg)" rx="16"/>
+  
+  <!-- Mulberry Tree Leaf Silhouette -->
+  <path d="M120 180C110 110 160 80 230 70C260 120 250 170 190 200C160 215 130 210 120 180Z" fill="#7A8574" opacity="0.3"/>
+  <path d="M120 180C160 150 200 120 230 70" stroke="#6F7C69" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Organic Silk Cocoon & Unspooling Filament -->
+  <ellipse cx="200" cy="150" rx="65" ry="42" transform="rotate(-20 200 150)" fill="#FAF4EB" stroke="#C5A880" stroke-width="2"/>
+  <ellipse cx="200" cy="150" rx="55" ry="34" transform="rotate(-20 200 150)" fill="#FFFBF5"/>
+  <!-- Cocoon fine texture -->
+  <g stroke="#DFCFAF" stroke-width="0.8" opacity="0.7">
+    <ellipse cx="195" cy="148" rx="45" ry="26" transform="rotate(-15 195 148)"/>
+    <ellipse cx="205" cy="152" rx="35" ry="20" transform="rotate(-25 205 152)"/>
+  </g>
+
+  <!-- Flowing golden filament thread -->
+  <path d="M250 135C300 120 340 180 370 140C385 120 360 80 320 100" stroke="#C5A880" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <circle cx="320" cy="100" r="3" fill="#9E805A"/>
+
+  <!-- Badge label -->
+  <text x="200" y="245" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-weight="600" fill="#181816" text-anchor="middle">100% Mulberry Silk</text>
+  <text x="200" y="265" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" letter-spacing="2" font-weight="600" fill="#756754" text-anchor="middle">GRADE 6A &bull; 22 MOMME</text>
+</svg>
